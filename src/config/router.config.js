@@ -26,19 +26,19 @@ export const asyncRouterMap = [
         children: [
           {
             path: '/dashboard/analysis/:pageNo([1-9]\\d*)?',
-            name: 'Analysis',
+            name: '数据分析',
             component: () => import('@/views/dashboard/Analysis'),
             meta: { title: 'menu.dashboard.analysis', keepAlive: false, permission: [ 'dashboard' ] }
           },
           // 外部链接
           {
             path: 'https://www.baidu.com/',
-            name: 'Monitor',
+            name: '数据监控',
             meta: { title: 'menu.dashboard.monitor', target: '_blank' }
           },
           {
             path: '/dashboard/workplace',
-            name: 'Workplace',
+            name: '工作台',
             component: () => import('@/views/dashboard/Workplace'),
             meta: { title: 'menu.dashboard.workplace', keepAlive: true, permission: [ 'dashboard' ] }
           }

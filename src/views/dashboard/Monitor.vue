@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'Monitor'
+  name: '数据监控'
 }
 </script>
 
